@@ -37827,29 +37827,27 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ (function(module, exports, __webpack_require__) {
 
 window.toastr = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
-
-/***/ }),
-
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
+jQuery(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('.btn-delete').on('click', function () {
+    var href = $(this).data('href');
+    $('#modal-delete').modal('show');
+    $('#modal-confirm').on('click', function () {
+      window.location.href = href;
+    });
+  });
+});
 
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!***********************************!*\
+  !*** multi ./resources/js/app.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\__Wamp\htdocs\Projetos\Laravel\laravel-start\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\__Wamp\htdocs\Projetos\Laravel\laravel-start\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\__Wamp\htdocs\Projetos\Trabalho\HortFruit\HortFruit\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })

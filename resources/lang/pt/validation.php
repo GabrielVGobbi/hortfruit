@@ -180,6 +180,7 @@ return [
         'username'  => 'usuário',
         'year'      => 'ano',
         'description' => 'descrição',
+        'price' => 'preço',
         'password_confirmation' => 'confirmação da senha',
     ],
 
